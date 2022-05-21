@@ -1,0 +1,22 @@
+:root {
+    --bg-hero: #ddb42e;
+    --bg-main: #000;
+    --bg-form: #FFFFFF;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+.hero {
+    width: 30%;
+    background-color: var(--bg-hero)
+}
+.main {
+    width: 70%;
+}
