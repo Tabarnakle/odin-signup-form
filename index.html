@@ -8,7 +8,7 @@
     <title>BIRU</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
@@ -34,36 +34,55 @@
                 </div>
             </header>
             <!-- Form -->
-            <form class="form">
-                <label for="first-name">
-                    <p>First Name</p>
-                    <input type="text" placeholder="First Name" id="first-name">
-                </label>
-                <label for="last-name">
-                    <p>Last Name</p>
-                    <input type="text" placeholder="Last Name" id="last-name">
-                </label>
-                <label for="email">
-                    <p>Email</p>
-                    <input type="text" placeholder="Email" id="email">
-                </label>
-                <label for="phone">
-                    <p>Phone Number</p>
-                    <input type="text" placeholder="Phone Number" id="phone">
-                </label>
-                <label for="password">
-                    <p>Password</p>
-                    <input type="text" placeholder="Password" id="password">
-                </label>
-                <label for="password-confirm">
-                    <p>Confirm Password</p>
-                    <input type="text" placeholder="Confirm Password" id="password-confirm">
-                </label>
-            </form>
+            <div class="form">
+                <form>
+                    <div class="form-group">
+                        <div class="form-element">
+                            <input type="text" id="first-name">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <input type="text" id="last-name">
+                            <label for="last-name">
+                                Last Name
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <input type="text" id="email">
+                            <label for="email">
+                                Email
+                            </label>
+                        </div>
+                            <div class="form-element">
+                                <input type="text" id="phone">
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+                            </div>
+                        <div class="form-element">
+                            <input type="text" id="password">
+                            <label for="password">
+                                Password
+                            </label>
+                        </div>
+                        <div class="form-element">
+                            <input type="text" id="password-confirm">
+                            <label for="password-confirm">
+                                Confirm Password
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
             <!-- Form button -->
-            <div class="form-btn"></div>
-            <!-- Footer -->
-            <footer></footer>
+            <div class="form-btn">
+                <button class="btn" type="submit">Create Account</button>
+            </div>
+            <div class="log-in">
+                <p>Already have an account? <a href="#">Log in.</a></p>
+            </div>
         </div>
     </div>
 </body>
