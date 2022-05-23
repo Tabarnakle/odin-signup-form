@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
 }
 
 .hero {
@@ -76,7 +76,7 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: var(--bg-form);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.212);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.212);
     padding: 1rem 0 0 1rem;
 }
 
@@ -87,13 +87,16 @@ form {
 }
 
 label {
+    color: rgb(59, 59, 59);
     display: block;
-    width: fit-content;
-    height: fit-content;
     position: relative;
     bottom: 30px;
     left: 8px;
-    transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out; 
+    transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out;
+}
+
+label:hover {
+    cursor: text;
 }
 
 input {
@@ -104,28 +107,61 @@ input {
     border: #fff solid 1px;
 
 }
+
 input:focus {
     border: #ed9a00 solid 1px;
+    box-shadow: 2px 2px 2px #ed9a00;
 }
 
 input:focus~label {
     bottom: 50px;
     font-size: 10px;
-    transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out; 
+    transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out;
+}
+
+input:not(:placeholder-shown)~label {
+    bottom: 50px;
+    font-size: 10px;
+    transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out;
+}
+
+input:invalid {
+    border: red solid 1px;
+    box-shadow: 2px 2px 2px red;
 }
 
 .form-btn {
     width: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     background-color: var(--bg-main);
     box-shadow: none;
     border: #ed9a00 solid 3px;
     border-radius: 5px;
     font-size: 1rem;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: #ed9a00ad;
+}
+.btn:active {
+    cursor: pointer;
+    background-color: #d18800;
+}
+
+.log-in {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.log-in a {
+    text-decoration: none;
+    color: var(--bg-hero);
 }

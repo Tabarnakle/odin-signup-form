@@ -35,40 +35,40 @@
             </header>
             <!-- Form -->
             <div class="form">
-                <form>
+                <form id="form">
                     <div class="form-group">
                         <div class="form-element">
-                            <input type="text" id="first-name">
+                            <input placeholder=" " type="text" id="first-name">
                             <label for="first-name">
                                 First Name
                             </label>
                         </div>
                         <div class="form-element">
-                            <input type="text" id="last-name">
+                            <input placeholder=" " type="text" id="last-name">
                             <label for="last-name">
                                 Last Name
                             </label>
                         </div>
                         <div class="form-element">
-                            <input type="text" id="email">
+                            <input placeholder=" " type="email" id="email">
                             <label for="email">
                                 Email
                             </label>
                         </div>
                             <div class="form-element">
-                                <input type="text" id="phone">
+                                <input placeholder=" " type="text" id="phone">
                                 <label for="phone">
-                                    Phone Number
+                                    Phone Number (Optional)
                                 </label>
                             </div>
                         <div class="form-element">
-                            <input type="text" id="password">
+                            <input placeholder=" " type="password" id="password" required>
                             <label for="password">
                                 Password
                             </label>
                         </div>
                         <div class="form-element">
-                            <input type="text" id="password-confirm">
+                            <input placeholder=" " type="password" id="password-confirm" required>
                             <label for="password-confirm">
                                 Confirm Password
                             </label>
@@ -78,7 +78,7 @@
             </div>
             <!-- Form button -->
             <div class="form-btn">
-                <button class="btn" type="submit">Create Account</button>
+                <button class="btn" type="submit" form="form">Create Account</button>
             </div>
             <div class="log-in">
                 <p>Already have an account? <a href="#">Log in.</a></p>
