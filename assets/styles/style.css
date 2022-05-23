@@ -11,6 +11,14 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: var(--bg-hero);
+}
+a:hover {
+    color: #d48b02;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -22,14 +30,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     width: 30%;
     background-color: var(--bg-hero);
     background-image: url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-
 }
+
 
 .logo {
     display: flex;
@@ -40,10 +48,16 @@ body {
     height: 8rem;
     background-color: var(--bg-hero);
     color: #FFF;
+    margin: auto 0;
 }
 
 .title {
     margin: 0;
+}
+
+.credits {
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .main {
@@ -56,6 +70,7 @@ body {
 header {
     margin: 3rem;
     padding: 2rem 0 2rem 1rem;
+    font-weight: 300;
 }
 
 form {
@@ -93,6 +108,7 @@ label {
     bottom: 30px;
     left: 8px;
     transition: font-size 0.4s ease-in-out, bottom 0.4s ease-in-out;
+    font-weight: 300;
 }
 
 label:hover {
@@ -161,7 +177,3 @@ input:invalid {
     font-size: 12px;
 }
 
-.log-in a {
-    text-decoration: none;
-    color: var(--bg-hero);
-}
